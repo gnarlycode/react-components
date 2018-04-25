@@ -1,6 +1,6 @@
 {
   "name": "@gnarlycode/react-scroll-state",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -22,7 +22,7 @@
     "type": "git",
     "url": "git+https://github.com/gnarlycode/react-components.git"
   },
-  "homepage": "https://github.com/gnarlycode/react-components#readme",
+  "homepage": "https://github.com/gnarlycode/react-components/tree/master/packages/react-scroll-state",
   "bugs": {
     "url": "https://github.com/gnarlycode/react-components/issues"
   },
