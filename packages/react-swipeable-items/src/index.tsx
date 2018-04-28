@@ -1,5 +1,5 @@
 import * as React from 'react'
-import Swipeable from 'react-swipeable'
+import * as Swipeable from 'react-swipeable'
 import Measure, { ContentRect } from 'react-measure'
 
 const easeOutCubic = 'cubic-bezier(0.215, 0.610, 0.355, 1.000)'

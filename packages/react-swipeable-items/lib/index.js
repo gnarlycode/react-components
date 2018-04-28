@@ -19,7 +19,7 @@ var __assign = (this && this.__assign) || Object.assign || function(t) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = require("react");
-var react_swipeable_1 = require("react-swipeable");
+var Swipeable = require("react-swipeable");
 var react_measure_1 = require("react-measure");
 var easeOutCubic = 'cubic-bezier(0.215, 0.610, 0.355, 1.000)';
 exports.minmax = function (min, value, max) {
@@ -219,7 +219,7 @@ var SwipeableItems = /** @class */ (function (_super) {
         this.itemsCount = React.Children.count(renderChildren);
         return (React.createElement(react_measure_1.default, { client: this.props.itemWidth === undefined, onResize: this.handleResize }, function (_a) {
             var measureRef = _a.measureRef;
-            return (React.createElement(react_swipeable_1.default, { className: className, innerRef: function (el) {
+            return (React.createElement(Swipeable, { className: className, innerRef: function (el) {
                     measureRef(el);
                     if (innerRef)
                         innerRef(el);
