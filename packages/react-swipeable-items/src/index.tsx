@@ -271,9 +271,6 @@ export class SwipeableItems extends React.PureComponent<
   getContainerStyle = (renderArgs: ChildArgs): React.CSSProperties => {
     const { containerStyle } = this.props
     return {
-      ...(typeof containerStyle === 'function'
-        ? containerStyle(renderArgs)
-        : containerStyle || {}),
       display: 'flex',
       flexDirection: 'row',
       position: 'relative',
@@ -285,6 +282,9 @@ export class SwipeableItems extends React.PureComponent<
       userSelect: 'none',
       width: 'fit-content',
       willChange: 'transform',
+      ...(typeof containerStyle === 'function'
+        ? containerStyle(renderArgs)
+        : containerStyle || {}),
     }
   }
 
