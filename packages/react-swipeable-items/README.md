@@ -38,7 +38,7 @@ return (
 )
 ```
 
-Also uou can use the `render` prop
+Also you can use the `render` prop
 
 ```jsx
 return (
