@@ -217,14 +217,15 @@ var SwipeableItems = /** @class */ (function (_super) {
         };
         var renderChildren = renderChild(children) || renderChild(render) || null;
         this.itemsCount = React.Children.count(renderChildren);
-        return (React.createElement(react_measure_1.default, { client: this.props.itemWidth === undefined, onResize: this.handleResize, children: function (_a) {
-                var measureRef = _a.measureRef;
-                return (React.createElement(react_swipeable_1.default, { className: className, innerRef: function (el) {
-                        measureRef(el);
-                        if (innerRef)
-                            innerRef(el);
-                    }, onSwiped: _this.handleSwiped, onSwiping: _this.handleSwiping, onSwipingLeft: _this.handleSwipingItemsLeft, onSwipingRight: _this.handleSwipingItemsRight, style: _this.getViewportStyle(renderArgs), trackMouse: trackMouse, children: React.createElement("div", { className: containerClassName, ref: _this.itemsRef, style: _this.getContainerStyle(renderArgs), children: renderChildren }) }));
-            } }));
+        return (React.createElement(react_measure_1.default, { client: this.props.itemWidth === undefined, onResize: this.handleResize }, function (_a) {
+            var measureRef = _a.measureRef;
+            return (React.createElement(react_swipeable_1.default, { className: className, innerRef: function (el) {
+                    measureRef(el);
+                    if (innerRef)
+                        innerRef(el);
+                }, onSwiped: _this.handleSwiped, onSwiping: _this.handleSwiping, onSwipingLeft: _this.handleSwipingItemsLeft, onSwipingRight: _this.handleSwipingItemsRight, style: _this.getViewportStyle(renderArgs), trackMouse: trackMouse },
+                React.createElement("div", { className: containerClassName, ref: _this.itemsRef, style: _this.getContainerStyle(renderArgs) }, renderChildren)));
+        }));
     };
     return SwipeableItems;
 }(React.PureComponent));

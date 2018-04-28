@@ -322,7 +322,8 @@ export class SwipeableItems extends React.PureComponent<
       <Measure
         client={this.props.itemWidth === undefined}
         onResize={this.handleResize}
-        children={({ measureRef }) => (
+      >
+        {({ measureRef }) => (
           <Swipeable
             className={className}
             innerRef={(el: HTMLDivElement) => {
@@ -335,17 +336,17 @@ export class SwipeableItems extends React.PureComponent<
             onSwipingRight={this.handleSwipingItemsRight}
             style={this.getViewportStyle(renderArgs)}
             trackMouse={trackMouse}
-            children={
-              <div
-                className={containerClassName}
-                ref={this.itemsRef}
-                style={this.getContainerStyle(renderArgs)}
-                children={renderChildren}
-              />
-            }
-          />
+          >
+            <div
+              className={containerClassName}
+              ref={this.itemsRef}
+              style={this.getContainerStyle(renderArgs)}
+            >
+              {renderChildren}
+            </div>
+          </Swipeable>
         )}
-      />
+      </Measure>
     )
   }
 }
