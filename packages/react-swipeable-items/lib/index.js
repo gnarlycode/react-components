@@ -175,11 +175,11 @@ var SwipeableItems = /** @class */ (function (_super) {
         };
         _this.getContainerStyle = function (renderArgs) {
             var containerStyle = _this.props.containerStyle;
-            return __assign({}, (typeof containerStyle === 'function'
-                ? containerStyle(renderArgs)
-                : containerStyle || {}), { display: 'flex', flexDirection: 'row', position: 'relative', transform: _this.getItemsTransform(), transition: _this.state.isReady && !_this.state.isSwiping
+            return __assign({ display: 'flex', flexDirection: 'row', position: 'relative', transform: _this.getItemsTransform(), transition: _this.state.isReady && !_this.state.isSwiping
                     ? "transform " + easeOutCubic + " 350ms"
-                    : '', userSelect: 'none', width: 'fit-content', willChange: 'transform' });
+                    : '', userSelect: 'none', width: 'fit-content', willChange: 'transform' }, (typeof containerStyle === 'function'
+                ? containerStyle(renderArgs)
+                : containerStyle || {}));
         };
         _this.state = {
             current: props.defaultCurrent || 0,
