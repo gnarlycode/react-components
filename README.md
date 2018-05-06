@@ -1,4 +1,7 @@
-###### _GNARLY CODE Production_ Introducing
+<p align="center"><img src="https://github.com/gnarlycode/gnarly-assets/blob/master/gnarly-logo-600.png?raw=true" /></p>
+
+
+###### _GNARLY CODE_ Presents
 
 # React Components
 
