@@ -5,8 +5,8 @@
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
-    "prebuild": "rimraf ./lib",
-    "build": "tsc"
+    "prebuild": ".\\..\\..\\node_modules\\.bin\\rimraf ./lib",
+    "build": ".\\..\\..\\node_modules\\.bin\\tsc"
   },
   "files": [
     "lib/"
