@@ -1,0 +1,38 @@
+{
+  "name": "@gnarlycode/react-styled-css-transition",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "prebuild": ".\\..\\..\\node_modules\\.bin\\rimraf ./lib",
+    "build": ".\\..\\..\\node_modules\\.bin\\tsc"
+  },
+  "files": [
+    "lib/"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": {
+    "name": "Dmitry Podlesny",
+    "email": "rezed93@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gnarlycode/react-components.git"
+  },
+  "homepage": "https://github.com/gnarlycode/react-components/tree/master/packages/react-styled-css-transition",
+  "bugs": {
+    "url": "https://github.com/gnarlycode/react-components/issues"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^10.5.2",
+    "@types/react": "^16.3.12",
+    "@types/react-transition-group": "^2.0.11",
+    "react": "^16.3.2",
+    "react-transition-group": "^2.4.0",
+    "styled-components": "^3.3.3"
+  }
+}
