@@ -1,8 +1,6 @@
 import * as React from 'react'
 import styled, { Interpolation, StyledComponentClass } from 'styled-components'
-import CSSTransition, {
-  CSSTransitionProps,
-} from 'react-transition-group/CSSTransition'
+import * as CSSTransition from 'react-transition-group/CSSTransition'
 import { TransitionProps } from 'react-transition-group/Transition'
 
 const transitionPropsNames = [
@@ -43,7 +41,7 @@ export function styledCSSTransition<P = {}>(
     children,
     className,
     ...props
-  }: Partial<CSSTransitionProps>) => {
+  }: Partial<CSSTransition.CSSTransitionProps>) => {
     const [transitionProps] = groupProps(props)
     return (
       <CSSTransition

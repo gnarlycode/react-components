@@ -23,7 +23,7 @@ var __rest = (this && this.__rest) || function (s, e) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = require("react");
 var styled_components_1 = require("styled-components");
-var CSSTransition_1 = require("react-transition-group/CSSTransition");
+var CSSTransition = require("react-transition-group/CSSTransition");
 var transitionPropsNames = [
     'in',
     'mountOnEnter',
@@ -57,7 +57,7 @@ function styledCSSTransition(transitionAttrs, css, component) {
     var Transition = function (_a) {
         var children = _a.children, className = _a.className, props = __rest(_a, ["children", "className"]);
         var transitionProps = groupProps(props)[0];
-        return (React.createElement(CSSTransition_1.default, __assign({ classNames: {
+        return (React.createElement(CSSTransition, __assign({ classNames: {
                 appear: 'appear',
                 appearActive: 'appear-active',
                 enter: 'enter',
