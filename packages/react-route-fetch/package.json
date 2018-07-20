@@ -1,0 +1,40 @@
+{
+  "name": "@gnarlycode/react-route-fetch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "prebuild": ".\\..\\..\\node_modules\\.bin\\rimraf ./lib",
+    "build": ".\\..\\..\\node_modules\\.bin\\tsc"
+  },
+  "files": [
+    "lib/"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": {
+    "name": "Dmitry Podlesny",
+    "email": "rezed93@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gnarlycode/react-components.git"
+  },
+  "homepage": "https://github.com/gnarlycode/react-components/tree/master/packages/react-route-fetch",
+  "bugs": {
+    "url": "https://github.com/gnarlycode/react-components/issues"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@types/react": "^16.3.12",
+    "@types/react-router": "^4.0.24",
+    "@types/react-router-config": "^1.0.7",
+    "@types/react-router-dom": "^4.2.7",
+    "react": "^16.3.2",
+    "react-router": "^4.2.0",
+    "react-router-config": "^1.0.0-beta.4",
+    "react-router-dom": "^4.3.1"
+  }
+}
