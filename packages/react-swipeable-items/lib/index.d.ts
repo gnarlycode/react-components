@@ -1,4 +1,3 @@
-/// <reference types="react" />
 import * as React from 'react';
 import { ContentRect } from 'react-measure';
 export declare const minmax: (min: number, value: number, max: number) => number;

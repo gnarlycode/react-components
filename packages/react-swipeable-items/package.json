@@ -1,12 +1,12 @@
 {
   "name": "@gnarlycode/react-swipeable-items",
-  "version": "1.0.4",
+  "version": "1.1.0",
   "description": "",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
-    "prebuild": ".\\..\\..\\node_modules\\.bin\\rimraf ./lib",
-    "build": ".\\..\\..\\node_modules\\.bin\\tsc"
+    "prebuild": "../../node_modules/.bin/rimraf ./lib",
+    "build": "../../node_modules/.bin/tsc"
   },
   "files": [
     "lib/"
@@ -28,11 +28,11 @@
   },
   "license": "ISC",
   "dependencies": {
-    "@types/react": "^16.3.12",
-    "@types/react-measure": "^2.0.2",
+    "@types/react": "^16.8.22",
+    "@types/react-measure": "^2.0.5",
     "@types/react-swipeable": "^4.2.1",
-    "react": "^16.3.2",
-    "react-measure": "^2.0.2",
+    "react": "^16.8.6",
+    "react-measure": "^2.3.0",
     "react-swipeable": "^4.2.1"
   }
 }

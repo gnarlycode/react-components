@@ -38,7 +38,7 @@ export function withRouteFetch<
   P extends object = {},
   PInner extends P & FetchEnhancedProps<F> = P & FetchEnhancedProps<F>
 >(routes: RouteConfig[]) {
-  return (WrappedComponent: React.ReactType<PInner>) =>
+  return (WrappedComponent: React.ElementType<PInner>) =>
     withRouter(
       class extends React.PureComponent<PInner> {
         componentDidMount() {

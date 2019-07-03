@@ -152,7 +152,6 @@ export class SwipeableItems extends React.PureComponent<
 
     const transform = `translate3d(${-position}px, 0, 0)`
     this.container.style.transform = transform
-    this.container.style.webkitTransform = transform
 
     if (onSwiping) {
       onSwiping({
@@ -201,13 +200,13 @@ export class SwipeableItems extends React.PureComponent<
         ? // Slide from sliding direction
           swipingTo
         : // Overslide left
-          this.swipingDirItems === -1 && current !== rightItem
-          ? rightItem
-          : // Overslide right
-            this.swipingDirItems === 1 && current !== leftItem
-            ? leftItem
-            : // Same slide
-              current
+        this.swipingDirItems === -1 && current !== rightItem
+        ? rightItem
+        : // Overslide right
+        this.swipingDirItems === 1 && current !== leftItem
+        ? leftItem
+        : // Same slide
+          current
 
     // Check bounds
     const newCurrent = minmax(0, slide, itemsCount - 1)
@@ -236,7 +235,6 @@ export class SwipeableItems extends React.PureComponent<
     if (!this.container) return
     const transform = this.getItemsTransform()
     this.container.style.transform = transform
-    this.container.style.webkitTransform = transform
   }
 
   handleResize = ({ client }: ContentRect) => {
@@ -311,8 +309,8 @@ export class SwipeableItems extends React.PureComponent<
       ch && typeof ch === 'function'
         ? ch(renderArgs)
         : ch && typeof ch !== 'function'
-          ? ch
-          : undefined
+        ? ch
+        : undefined
 
     const renderChildren = renderChild(children) || renderChild(render) || null
 
